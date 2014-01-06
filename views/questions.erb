@@ -1,9 +1,12 @@
 <div class="header">
   <h1>What brand cigarette are you?</h1>
     <div class="quote"> 
-      <h2>All rules had their exceptions, but the way I came to see things they generally went like this: Kools and Newports were for black people and lower-class whites. Camels were for procrastinators, those who wrote bad poetry, and those who put off writing bad poetry. Merits were for sex addicts, Salems for alcoholics, and Mores for people who considered themselves to be outrageous but really weren’t. One should never lend money to a Marlboro-menthol smoker, though you could usually count on a regular-Marlboro person to pay you back. - David Sedaris</h2>
+      <h2>"All rules had their exceptions, but the way I came to see things they generally went like this: Kools and Newports were for black people and lower-class whites. Camels were for procrastinators, those who wrote bad poetry, and those who put off writing bad poetry. Merits were for sex addicts, Salems for alcoholics, and Mores for people who considered themselves to be outrageous but really weren’t. One should never lend money to a Marlboro-menthol smoker, though you could usually count on a regular-Marlboro person to pay you back." - David Sedaris</h2>
     </div>
 </div>
-<div class="questions">
-  
-</div>
+<form action="/results" method="POST">
+  <p>What kind of music do you listen to?</p>
+  <input type="radio" id="music" name="music_preference" value="camels"><%=@music[0]%> </input></br>
+  <input type="radio" id="music" name="music_preference" value="non_smoker"><%=@music[1]%> </input></br>
+  <button class = "space" type="submit" value="next">Click here. Discover Your Destiny.</button>
+</form>
