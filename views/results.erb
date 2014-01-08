@@ -1,2 +1,21 @@
-<h1>Results</h1>
-<%= params.inspect %>
+<h1>You're brand is...</h1>
+<div = "results>"
+  <%= @final %>
+  <% if @final == "american_spirit" %>
+    <%= "Your brand is American Spirits!  You actively reject big cigarette companies, in favor of 
+    smaller artisanal brands. You're one step away from rolling your own cigarettes." %>
+  <% elsif @final == "camels" %>
+    <%= "You are an artist, and smoking helps you think.  How else could you stay up for all your coffe and cigarette infused nights? 
+    Like Serge Gainsbourg, you are a chain-smoking legend" %>
+   <% elsif @final == "marlboro_light" %>
+    <%= "You've been smoking for longer than most poeple have been alive.  You're chill about it, 
+    and maybe even stopped for a while, but every now and then, nothing takes the edge off like a cigarette.  Stay classy, and enjoy." %>
+    <%elsif @final == "marlboro_red" %>
+      <%="You were born with a cigarette in your mouth.  You work insanely hard, and are just intense. Scary when in love, scarier when spurned."%>
+    <% elsif @final == "non-smoker" %>
+      <%="Who are you kidding taking this quiz.  Health nuts don't smoke! Go back to your joyless life full of kale." %>
+  <% end %>
+</div>
+<img src= <%="../images/#{@final}.gif" %> >
+
+
