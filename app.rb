@@ -22,6 +22,9 @@ class Quiz < Sinatra::Application
     hash = @results.inject(Hash.new(0)) {|h,i| h[i] += 1; h }
     array = hash.sort_by {|brand, number| number}
     @final = array.last[0]
+    @brand = @final.gsub('_', ' ').capitalize
+   
+
 
     erb :results
     

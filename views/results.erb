@@ -1,8 +1,9 @@
-<h1>You're brand is...</h1>
-<div = "results>"
-  <%= @final %>
+
+<div ="cig_brand"<%= @brand %><br></br></div>
+
+<div= "results">
   <% if @final == "american_spirit" %>
-    <%= "Your brand is American Spirits!  You actively reject big cigarette companies, in favor of 
+    <%= "You actively reject big cigarette companies, in favor of 
     smaller artisanal brands. You're one step away from rolling your own cigarettes." %>
   <% elsif @final == "camels" %>
     <%= "You are an artist, and smoking helps you think.  How else could you stay up for all your coffe and cigarette infused nights? 
@@ -14,6 +15,8 @@
       <%="You were born with a cigarette in your mouth.  You work insanely hard, and are just intense. Scary when in love, scarier when spurned."%>
     <% elsif @final == "non-smoker" %>
       <%="Who are you kidding taking this quiz.  Health nuts don't smoke! Go back to your joyless life full of kale." %>
+    <%elsif @final == "vogue" %>
+      <%="You're the life of the party! Jetting off to exotic locales for the latest party, you delicately balance your cigarette while taking body shots"%>
   <% end %>
 </div>
 <img src= <%="../images/#{@final}.gif" %> >
