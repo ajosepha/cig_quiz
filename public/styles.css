@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Marlboro';
+  src: url("../fonts/Marlboro.ttf");
+}
+
+.header{
+  background-color: #BB0303;
+  padding: 40px 30%;
+}
+
+.what_brand {
+  background-color: white;
+  color: #BB0303;
+  border-radius: 10px;
+ 
+  position: center;
+}
+
+h1 {
+  font-family: 'Marlboro' arial helvetica
+
+}
