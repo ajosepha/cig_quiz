@@ -12,7 +12,8 @@
 
 
 <form action="/results" method="POST">
-  <p>What kind of music do you listen to?</p>
+  <div class="question">What kind of music do you listen to?</div>
+    
     <input type="radio" id="music" name="music_preference" value="camels"><%=@music[0]%> </input></br>
     <input type="radio" id="music" name="music_preference" value="non_smoker"><%=@music[1]%> </input></br>
     <input type="radio" id="music" name="music_preference" value="vogue"><%=@music[2]%> </input></br>
@@ -20,7 +21,11 @@
     <input type="radio" id="music" name="music_preference" value="marlboro_red"><%=@music[4]%> </input></br>
     <input type="radio" id="music" name="music_preference" value="marlboro_light"><%=@music[5]%> </input></br>
 
-  <p>Which book do you like?</p>
+
+  
+
+
+<div class="question">Which book do you like?</div>
     <input type="radio" id="book" name="book_preference" value="camels"><%=@books[0]%> </input></br>
     <input type="radio" id="book" name="book_preference" value="non_smoker"><%=@books[1]%> </input></br>
     <input type="radio" id="book" name="book_preference" value="vogue"><%=@books[2]%> </input></br>
@@ -28,7 +33,7 @@
     <input type="radio" id="book" name="book_preference" value="marlboro_red"><%=@books[4]%> </input></br>
     <input type="radio" id="book" name="book_preference" value="marlboro_light"><%=@books[5]%> </input></br>
 
-  <p>What do you want to eat?</p>
+  <div class="question">What do you want to eat?</div>
     <input type="radio" id="food" name="food_preference" value="camels"><%=@food[0]%> </input></br>
     <input type="radio" id="food" name="food_preference" value="non_smoker"><%=@food[1]%> </input></br>
     <input type="radio" id="food" name="food_preference" value="vogue"><%=@food[2]%> </input></br>
@@ -36,7 +41,7 @@
     <input type="radio" id="food" name="food_preference" value="marlboro_red"><%=@food[4]%> </input></br>
     <input type="radio" id="food" name="food_preference" value="marlboro_light"><%=@food[5]%> </input></br>
 
-  <p>Where would you want to call home?<p>
+  <div class="question">Where would you want to call home?</div>
     <input type="radio" id="home" name="hometown" value="camels"><%=@hometown[0]%> </input></br>
     <input type="radio" id="home" name="hometown" value="non-smoker"><%=@hometown[1]%> </input></br>
     <input type="radio" id="home" name="hometown" value="vogue"><%=@hometown[2]%> </input></br>
