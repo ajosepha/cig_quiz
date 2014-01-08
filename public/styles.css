@@ -5,18 +5,40 @@
 
 .header{
   background-color: #BB0303;
-  padding: 40px 30%;
+  padding: 40px 25%;
+  margin-bottom: 5%;
 }
 
 .what_brand {
   background-color: white;
   color: #BB0303;
-  border-radius: 10px;
- 
-  position: center;
+  border-radius: 20%;
+  text-align: center;
+  height: 100%;
 }
 
 h1 {
-  font-family: 'Marlboro' arial helvetica
+  font-family: arial; 
+  text-transform: uppercase;
 
 }
+
+.triangle_background{
+  background-color: #BB0303;
+  margin-top: -5%;
+  font-family: 'Marlboro' arial;
+  padding: 0  10% 2%;
+}
+
+.inner_triangle{
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border: 5px black solid;
+}
+
+
+
+
+
+
