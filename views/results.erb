@@ -1,8 +1,13 @@
 
-<div class="brand">Your brand is <%= @brand %></div>
+<div class="header">
+  <div class="what_brand">
+    <br/><h1>Your brand is <%= @brand %></h1>
+  </div>
+</div>
 
-
-<div class= "results">
+  <div class="triangle_background">
+    <div class="inner_triangle">
+      <h3>
   <% if @final == "american_spirit" %>
     <%= "You actively reject big cigarette companies, in favor of 
     smaller artisanal brands. You're one step away from rolling your own cigarettes." %>
@@ -19,7 +24,11 @@
     <%elsif @final == "vogue" %>
       <%="You're the life of the party! Jetting off to exotic locales for the latest party, you delicately balance your cigarette while taking body shots"%>
   <% end %>
+    </h3>
+  </div>
 </div>
-<img src= <%="../images/#{@final}.gif" %> >
+
+
+<div class="image_border"><img src= <%="../images/#{@final}.gif" %> ></div>
 
 

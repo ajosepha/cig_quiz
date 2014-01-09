@@ -46,6 +46,32 @@ h1 {
   padding: 5px;
 }
 
+form {
+  text-align: center;
+  font-family: helvetica, sans-serif bold;
+}
+
+.space{
+  background-image: url('../images/smoke.jpeg');
+  border-radius: 5px;
+  border-color: black; 
+  font-family: 'Marlboro';
+  font-size: 1.25em;
+  color: #1A9F67;
+  padding: 15px;
+  text-shadow: 2px 1px black;
+}
+
+h3 {
+  font-family: "Marlboro", arial, sans-serif;
+  font-size: 1.25em
+}
+
+.image_border{
+  margin: 10px;
+  margin-left: 30%; 
+}
+
 
 
 
